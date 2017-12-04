@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.fbz.web.helper.DatabaseHelper;
 import org.fbz.web.model.Customer;
 import org.fbz.web.service.CustomerService;
 import org.junit.Before;
@@ -19,8 +20,8 @@ public class CustomerServiceTest {
     }
 
     @Before
-    public void init() {
-
+    public void init() throws Exception {
+        DatabaseHelper.executeSqlFile("sql/customer_init.sql");
     }
 
     @Test
