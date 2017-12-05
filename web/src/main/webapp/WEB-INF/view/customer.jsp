@@ -20,7 +20,7 @@
 		</tr>
 		<c:forEach items="${customerList}" var="it">
 			<tr>
-				<td>${it.name}</td>
+				<td><a href="${BASE}/customer_show?id=${it.id}">${it.name}</a></td>
 				<td>${it.contact}</td>
 				<td>${it.phone}</td>
 				<td>${it.email}</td>

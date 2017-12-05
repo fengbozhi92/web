@@ -6,17 +6,17 @@ import java.util.Map;
 
 import org.fbz.web.helper.DatabaseHelper;
 import org.fbz.web.model.Customer;
-import org.fbz.web.service.CustomerService;
+import org.fbz.web.service.CustomerServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 
 import junit.framework.Assert;
 
 public class CustomerServiceTest {
-    private final CustomerService customService;
+    private final CustomerServiceImpl customService;
 
     public CustomerServiceTest() {
-        customService = new CustomerService();
+        customService = new CustomerServiceImpl();
     }
 
     @Before

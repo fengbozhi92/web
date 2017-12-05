@@ -182,6 +182,7 @@ public class DatabaseHelper {
         return entityClass.getSimpleName();
     }
     
+    @SuppressWarnings("all")
     public static void executeSqlFile(String filePath) {
         InputStream is = Thread.currentThread().getContextClassLoader().getSystemResourceAsStream(filePath);
         BufferedReader reader = new BufferedReader( new InputStreamReader(is));
